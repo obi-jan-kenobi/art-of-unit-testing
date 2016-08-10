@@ -7,22 +7,16 @@ using System.Threading.Tasks;
 namespace LogAn {
     public class LogAnalyzer {
 
+        private IExtensionManager mgr;
+
+        public LogAnalyzer(IExtensionManager mgr) {
+            this.mgr = mgr;
+        }
+
         public bool wasLastFileNameValid { get; set; }
 
         public bool isValidLogFileName(string fileName) {
-
-
-
-            wasLastFileNameValid = false;
-            if(string.IsNullOrEmpty(fileName)) {
-                throw new ArgumentException("dateiname muss angegeben werden");
-            }
-            if (!fileName.EndsWith(".SFL", StringComparison.CurrentCultureIgnoreCase)) {
-                return false;
-            } else {
-                wasLastFileNameValid = true;
-                return true;
-            }
+            return mgr.isValid(fileName);
         }
     }
 }

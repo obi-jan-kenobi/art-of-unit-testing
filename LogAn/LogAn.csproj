@@ -91,6 +91,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FakeExtensionManager.cs" />
+    <Compile Include="FileExtensionManager.cs" />
+    <Compile Include="IExtensionManager.cs" />
     <Compile Include="LogAnalyzer.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
