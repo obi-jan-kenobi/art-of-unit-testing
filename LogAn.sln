@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogAn", "LogAn\LogAn.csproj", "{194FA1A6-5BFA-4EE4-94A6-FCA074751CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogAn.UnitTests", "LogAn.UnitTests\LogAn.UnitTests.csproj", "{427DD00A-EF74-45F1-9431-CB94421C9D83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{194FA1A6-5BFA-4EE4-94A6-FCA074751CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194FA1A6-5BFA-4EE4-94A6-FCA074751CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194FA1A6-5BFA-4EE4-94A6-FCA074751CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194FA1A6-5BFA-4EE4-94A6-FCA074751CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427DD00A-EF74-45F1-9431-CB94421C9D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427DD00A-EF74-45F1-9431-CB94421C9D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427DD00A-EF74-45F1-9431-CB94421C9D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427DD00A-EF74-45F1-9431-CB94421C9D83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
