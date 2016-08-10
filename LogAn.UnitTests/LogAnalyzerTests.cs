@@ -34,4 +34,19 @@ namespace LogAn.UnitTests {
             return new LogAnalyzer(mgr);
         }
     }
+
+    public class FakeExtensionManager : IExtensionManager {
+
+        bool returnValue;
+
+        public FakeExtensionManager(bool returnValue) {
+            this.returnValue = returnValue;
+        }
+        public bool isValid(string fileName) {
+            if (string.IsNullOrEmpty(fileName)) {
+                throw new ArgumentException("dateiname muss angegeben werden");
+            }
+            return returnValue;
+        }
+    }
 }
