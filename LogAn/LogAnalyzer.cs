@@ -16,7 +16,15 @@ namespace LogAn {
         public bool wasLastFileNameValid { get; set; }
 
         public bool isValidLogFileName(string fileName) {
-            return mgr.isValid(fileName);
+            if (string.IsNullOrEmpty(fileName)) {
+                throw new ArgumentException("dateiname muss angegeben werden");
+            }
+            try { return mgr.isValid(fileName); }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            
         }
     }
 }

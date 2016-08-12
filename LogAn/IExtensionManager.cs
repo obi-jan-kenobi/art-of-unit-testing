@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace LogAn {
     public interface IExtensionManager {
+        Exception willThrow { get; set; }
+
         bool isValid(string fileName);
     }
 }
